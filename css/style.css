@@ -1,124 +1,196 @@
-@import url(https://fonts.googleapis.com/css?family=Catamaran:900,100|Crimson+Text:400,600);
-
-h1 {
-  font-family: 'Catamaran', sans-serif;
-  font-weight: bold;
-  margin-left: 270px;
-  padding-top: 10px;
-  font-size: 50px;
-  color: rgb(203, 60, 165);
-}
-
-address {
-  margin: auto;
-  padding-bottom: 20px;
-  font-style: normal;
-  text-align: center;
-}
+@import url(https://fonts.googleapis.com/css?family=Londrina+Solid|Rock+Salt|Libre+Baskerville);
 
 body {
-  font-family: 'Crimson Text', serif;
-  background-color: rgb(234, 234, 234);
-}
-
-#wrapper {
-  width: 960px;
+  line-height: 2;
+  padding: 0;
   margin: auto;
-  background-color: rgb(250, 238, 252);
-  overflow: auto;
 }
 
-main {
-  padding: 30px;
+article {
+  padding-right: 3em;
 }
 
-h2 {
-  border-bottom: 3px solid rgb(203, 60, 165);
-  font-size: 26px;
+header {
+  float: right;
+  clear: none;
 }
 
-h3 {
-  color: rgb(203, 60, 165);
-  border-bottom: 3px solid rgb(234, 234, 234);
+header p {
+  font-family: 'Londrina Solid', cursive;
+  color: rgb(21, 21, 21);
+  font-size: 3.5em;
+  padding-right: 2em;
+  text-align: right;
+  margin: 0;
+}
+
+header p:hover {
+  color: gray;
+}
+
+nav {
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  background-color: black;
+  float: left;
+  clear: none;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   background-color: black;
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 nav ul li {
-  display: inline-block;
-  padding-right: 30px;
-  font-family: 'Catamaran',sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  margin-left: 68px;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.2em;
+  padding: 1em;
 }
 
-a:link {
-  color: rgb(190, 23, 140);
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: orange;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(229, 229, 229);
-}
-
-a:visited {
-  color: rgb(175, 75, 200);
+  color: gray;
+  text-decoration: none;
 }
 
 a:active {
-  color: rgb(249, 232, 250);
+  color: red;
+  text-decoration: none;
 }
 
-.school a:hover {
-  color: rgb(190, 23, 140);
+nav ul ul {
+  display: none;
 }
 
-#experience {
+#artwork:hover ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em;
+  background-color: rgb(148, 109, 146) !important;
+}
+
+#um {
+  color: orange;
+}
+
+#um:hover {
+  color: gray;
+}
+
+.title {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.8em;
+  color: gray;
   float: right;
   clear: both;
-  overflow: auto;
-  width: 900px;
-  text-align: right;
+  border-bottom: 2px solid black;
+  width: 75%;
 }
 
-#experience ul li {
-  list-style: inside;
+.art-layout img {
+  margin: 1em;
+  border: 0.15em solid black;
+  display: grid;
+  float: right;
+  clear: none;
 }
 
-#experience ul ul li {
-  list-style: none;
-  border-bottom: 3px solid rgb(234, 234, 234);
+.art-layout {
+  width: 75%;
+  float: right;
+  margin-right: 3%;
 }
 
-#references {
-  float: left;
+.img-index {
+  float: right;
   clear: both;
-  overflow: auto;
+  transform: scale(1.4);
+  padding: 5em;
+  margin-right: 30%;
+}
+
+.about-info {
+  float:left;
+  clear: both;
+  margin-left: 25%;
+  font-family: 'Libre Baskerville', serif;
+  color: black;
+  text-align: left;
+}
+
+.about-left {
+  float: left;
+  clear: none;
+  padding: 1em;
+  padding-top: 1em;
+}
+
+.about-right {
+  float: right;
+  clear: none;
+  padding: 1.5em;
+}
+
+#baker {
+  padding-top:0;
+}
+
+.artwork-info {
+  float:left;
+  clear:both;
+  margin-left: 25%;
+  margin-right: 5%;
+  font-family: 'Libre Baskerville', serif;
+  color: black;
+  text-align: left;
+  padding-top: 1em;
+}
+
+.img-artwork {
+  float: right;
+  clear: none;
+  margin-right: 1%;
+  transform: scale(1.1);
+}
+
+.img-contact {
+  float:right;
+  clear: none;
+  padding: 2%;
+}
+
+.contact-info {
+  font-family: 'Libre Baskerville', serif;
+  color: black;
+  text-align: left;
+  float: right;
+  clear: none;
+  padding-top: 1em;
+  margin-right: 5%;
 }
 
 footer {
-  background-color: black;
-  color: rgb(250, 238, 252);
-  margin: auto;
-  height: 50px;
-  padding-top: 20px;
-  float: left;
+  font-family: 'Libre Baskerville', serif;
+  color: black;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 2em;
+  float: right;
   clear: both;
-  width: 960px;
-}
-
-p small {
-  padding-bottom: 10px;
-}
-
-.copyright {
-  padding-left: 38%;
-  color: rgb(189, 108, 219);
-  float: left;
+  margin: 0;
 }
