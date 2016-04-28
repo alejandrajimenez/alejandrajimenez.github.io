@@ -109,6 +109,10 @@
     font-size: 1em;
   }
 
+  br {
+    display: none;
+  }
+
   .artwork-info {
       margin-left: 5%;
       margin-right: 1%;
